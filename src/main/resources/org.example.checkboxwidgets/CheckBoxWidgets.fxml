@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.text.Text?>
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.checkboxwidgets.CheckBoxWidgetsController">
+    <VBox>
+        <Label fx:id="label" text="Надпись"/>
+        <Button fx:id="button" text="Кнопка"/>
+        <TextField fx:id="textField" text="Текстовое поле"/>
+    </VBox>
+    <VBox>
+        <CheckBox fx:id="labelCheckBox" text="Показать надпись" onAction="#toggleLabel"/>
+        <CheckBox fx:id="buttonCheckBox" text="Показать кнопку" onAction="#toggleButton"/>
+        <CheckBox fx:id="textFieldCheckBox" text="Показать поле" onAction="#toggleTextField"/>
+    </VBox>
+</HBox>
